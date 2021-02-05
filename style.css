@@ -1,0 +1,129 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+header.main-header {
+    text-align: center;
+}
+
+header > h1 {
+    color: brown;
+}
+
+.btn {
+    border: solid 2px goldenrod;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: plum;
+}
+
+.new-game {
+    text-align: center;
+    padding: 15px;
+}
+
+.player-area {
+    display:inline-block;
+    vertical-align: top;
+    width: 60%;
+}
+
+.move-list {
+    display:inline-block;
+    vertical-align: top;
+    width: 35%;
+}
+
+.move-options {
+    height: 165px;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display:none;
+}
+
+.move-options .move-rock,
+.move-options .move-paper,
+.move-options .move-scissors {
+    display: inline-block;
+    width: 165px;
+    border-radius: 10px;
+}
+
+.move-options .move-rock:hover,
+.move-options .move-paper:hover,
+.move-options .move-scissors:hover {
+    cursor: pointer;
+}
+
+.move-options .move-rock {
+    background-color: silver;
+}
+
+.move-options .move-rock:hover {
+    background-color: gray;
+}
+
+.move-options .move-paper {
+    background-color: papayawhip;
+}
+
+.move-options .move-paper:hover {
+    background-color: peachpuff;
+}
+
+.move-options .move-scissors {
+    background-color: yellow;
+}
+
+.move-options .move-scissors:hover {
+    background-color: rgb(255, 71, 71);
+}
+
+.icon {
+    width: 20px; 
+    height: 20px;
+}
+
+.result {
+    padding: 10px 15px;
+    border-top: solid 1px black;
+}
+
+.result-win {
+    color: green;
+}
+
+.result-loss {
+    color: red;
+}
+
+.result-tie {
+    color: purple;
+}
+
+.game-winner {
+    background-color: green;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.game-loser {
+    background-color: red;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}

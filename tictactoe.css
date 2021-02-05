@@ -1,0 +1,106 @@
+html {
+    font-size:16px;
+}
+body {
+    background-color: #efefef;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: brown;
+    display: inline-block;
+}
+
+.link {
+    position: absolute;
+    right: 10px;
+}
+
+#GameInfo{
+    margin-bottom:20px;
+}
+
+#GameDetails, #NewGame {
+    height: 100px;
+    display: inline-block;
+    /* Tells css not to include border and padding in specified width/height */
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+#GameDetails {
+    width: 90%;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#NewGame {
+    width: 10%;
+    border:1px solid green;
+    text-align:center;
+    font-size:2rem;
+}
+
+#NewGame:hover {
+    background-color:aqua;
+    cursor:pointer;
+}
+
+.game-container {
+    width: 75%;
+    /*75% of viewport*/
+    height: 75vh;
+    margin: 0 auto;
+}
+
+.border-right-bottom {
+    border-right: solid 2px grey;
+    border-bottom: solid 2px grey;
+}
+
+.border-bottom {
+    border-bottom: solid 2px grey;
+}
+
+.border-right {
+    border-right: solid 2px grey;
+}
+
+.board-row {
+    height:33%;
+}
+
+.board-cell {
+    display: inline-block;
+    width: 33%;
+    height: 100%;
+    cursor:pointer;
+
+    /*This fixes the space caused by new lines in html*/
+    /*margin:-4px;*/
+}
+
+.board-cell:hover:not(.disabled) {
+    background-color: #ddd;
+}
+
+.board-cell.disabled {
+    cursor:default;
+}
+
+
+.owned-player-x {
+    background: transparent url('images/x.png') no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.owned-player-o {
+    background: transparent url('images/o.png') no-repeat;
+    background-position: center center;
+    background-size: contain;
+}

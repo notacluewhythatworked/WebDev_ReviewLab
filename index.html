@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <main>
+        <article>
+            <header class="main-header">
+                <h1>Rock, Paper, Scissors!</h1>
+            </header>
+            <div class="game-container">
+                <div class="player-area"></div>
+                    <div class="new-game">
+                        <button id="BtnNewGame" class="btn">New Game</button>
+                    </div>
+                    <div class="move-options">
+                        <div class="move-rock">
+                            <img src="images/rock.png" alt="Rock" title="Rock - Beats Scissors!" />
+                        </div>
+                        <div class="move-paper">
+                            <img src="images/paper.png" alt="Paper" title="Paper - Beats Rock!" />
+                        </div>
+                        <div class="move-scissors">
+                            <img src="images/scissors.png" alt="Scissors" title="Scissors - Beats Paper!" />
+                        </div>
+                    </div>
+                <div class="move-list">
+                    <h2>Game Details:</h2>
+                    <div id="GameData"></div>
+                </div>
+            </div>
+        </article>
+    </main>
+    
+</body>
+</html>
